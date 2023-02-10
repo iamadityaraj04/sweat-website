@@ -90,7 +90,7 @@ html{
     margin-top: 20px;
     display: block;
     height: 700px;
-    background-image: url(image/home-img-4.jpg);
+    background-image: url(image/home-img.jpg);
     background-repeat: no-repeat;
     background-size: 1300px auto;
     background-position: center center;
@@ -110,4 +110,23 @@ html{
     margin-top: 150px;
     width: 600px;
     padding: 50px;
+}
+.btn{
+    margin-top: 20px;
+    background-color:rgb(247, 0, 66);
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color:aliceblue;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#footer{
+    margin-top: 50px;
+    height: 300px;
+    background-color: rgb(247, 0, 66);
 }
