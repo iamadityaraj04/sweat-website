@@ -8,6 +8,9 @@ html{
     scroll-behavior: smooth;
 }
 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 1300px;
 }
 #heading{
@@ -41,70 +44,37 @@ html{
 #navbar-nav :hover{
     color: rgb(247, 0, 66);
 }
-#time{
-    margin-left: 30px;
-}
-#social-link{
-    position: relative;
-    margin-left: 710px;
-}
-#contact-info{
-    position: absolute;
-    margin-left:860px;
-}
-#social-link span{
-    margin: 0px 5px;
-}
-#social-link span a{
-    color: aliceblue;
-    text-decoration: none;
-}
-#social-link span a:hover{
-    transition-duration: 0.3s;
-    color: rgb(197, 197, 197);
-}
-#navbar{
-    background-color: white;
-    overflow: hidden;
-    position: relative;
-    margin-top: 0px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-#logo{
-    position: relative;
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-}
-#logo img{
-    border-radius: 100%;
-}
-#logo span{
-    font-size: 30px;
-    color: rgb(247, 0, 66);
-    font-weight: bolder;
-    padding: 5px;
-}
-#nav-menu{
-    position: absolute;
-    margin-left: 650px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 12px;
-}
-#nav-menu span{
-    margin: 10px;
-    padding: 5px 10px;
-}
-#nav-menu span:hover{
-    transition-duration: 0.3s;
-    color: aliceblue;
+#card-container{
+    border: none;
     background-color: rgb(247, 0, 66);
-    border-radius: 100px;
-    cursor: pointer;
+    margin-top: 30px;
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
 }
+#card-container div {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px;
+    border: none;
+}
+#card-container div div{
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+}
+#card-container img{
+    border-radius:10px 10px 0px 0px ;
+}
+@media screen and (max-width: 900px) {
+    #card-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #card-container div{
+       margin:  20px;
+    }
+  }
 .sub-container{
     display: block;
     height: 700px;
