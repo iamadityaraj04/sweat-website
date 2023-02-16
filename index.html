@@ -16,6 +16,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- alert -->
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
@@ -33,43 +34,63 @@
               This website is still in development phase
             </div>
         </div>
+
+        <!-- navbar -->
         <div id="heading">
-            
-            <div class="info-nav">
-                <div id="time">
-                    <span id="time-format">Time: Mon - Fri (9:00 A.M - 8:00 P.M)</span>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">
+                            SWEAT
+                            <img src="image/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                          </a>
+                        </div>
+                    </nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" id="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#" style="color: rgb(247, 0, 66);">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trainers</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Exercises
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Cardio</a></li>
+                                  <li><a class="dropdown-item" href="#">Biceps</a></li>
+                                  <li><a class="dropdown-item" href="#">Triceps</a></li>
+                                  <li><a class="dropdown-item" href="#">Leg</a></li>
+                                  <li><a class="dropdown-item" href="#">Shoulder</a></li>
+                                  <li><a class="dropdown-item" href="#">Back</a></li>
+                                  <li><a class="dropdown-item" href="#">Chest</a></li>
+                                </ul>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-danger" style="color: aliceblue; width: 90px;">Login</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="contact-info">
-                    <span id="phn-num">+91 834-071-1285 |</span>
-                </div>
-                <div id="social-link">
-                    <span id="facebook-link">
-                        <a href="https://www.facebook.com/" target="_blank">facebook</a>
-                    </span>
-                    <span id="insta-link">
-                        <a href="https://www.instagram.com/" target="_blank">instagram</a>
-                    </span>
-                    <span id="youtube-link">
-                        <a href="https://www.youtube.com/" target="_blank">youtube</a>
-                    </span>
-                    
-                </div>
-            </div>
-            <div id="navbar">
-                <div id="logo">
-                    <span>SWEAT</span>
-                    <img src="image/logo.png" alt="" width="30px">
-                </div>
-                <div id="nav-menu">
-                    <span>HOME</span>
-                    <span>ABOUT US</span>
-                    <span>GALLERY</span>
-                    <span>PRICING</span>
-                    <span>CONTACTS</span>
-                    <span>GET SUBSCRIPTION</span>
-                </div>
-            </div>
+            </nav>
         </div>
+
+
         <div class="sub-container">
             <div id="quote-container">
                 <span class="quote">
@@ -87,10 +108,103 @@
                 src="https://www.youtube.com/embed/4-zjQvTDnbw?autoplay=1&mute=1&vq=hd720">
             </iframe>
         </div>
-
-        <footer id="footer">
-
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-white text-muted" style="margin-top: 50px;" id="footer">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                <i class="fab fa-facebook-f">facebook</i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                <i class="fab fa-twitter">twitter</i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                <i class="fab fa-instagram">instagram</i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                <i class="fab fa-youtube">youtube</i>
+                </a>
+            </div>
+            <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3 text-secondary"></i>SWEAT
+                    </h6>
+                    <p>
+                    Here you can use rows and columns to organize your footer content. Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Trainers</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3 text-secondary"></i> Dhanbad, Jharkhand, India</p>
+                    <p>
+                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                    sweatofficial@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2023 Copyright, All rights are reserved.
+            <a class="text-reset fw-bold" href="index.html">SWEAT</a>
+            </div>
+            <!-- Copyright -->
         </footer>
+        <!-- Footer -->
     </div>
+    
 </body>
 </html>
