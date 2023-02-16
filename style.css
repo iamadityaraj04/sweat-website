@@ -32,7 +32,7 @@ html{
 }
 #contact-info{
     position: absolute;
-    margin-left:880px;
+    margin-left:860px;
 }
 #social-link span{
     margin: 0px 5px;
@@ -82,12 +82,12 @@ html{
 }
 #nav-menu span:hover{
     transition-duration: 0.3s;
+    color: aliceblue;
     background-color: rgb(247, 0, 66);
     border-radius: 100px;
     cursor: pointer;
 }
 .sub-container{
-    margin-top: 20px;
     display: block;
     height: 700px;
     background-image: url(image/home-img.jpg);
@@ -108,23 +108,10 @@ html{
 #quote-container{
     position: absolute;
     margin-top: 150px;
+    margin-left: 30px;
     width: 600px;
     padding: 50px;
 }
-.btn{
-    margin-top: 20px;
-    background-color:rgb(247, 0, 66);
-    border: none;
-    padding: 10px 20px;
-    font-size: 15px;
-    border-radius: 20px;
-}
-.btn:hover{
-    background-color:aliceblue;
-    transition-duration: 0.3s;
-    cursor: pointer;
-}
-
 #footer{
     margin-top: 50px;
     height: 300px;
