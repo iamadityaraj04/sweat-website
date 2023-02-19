@@ -90,6 +90,9 @@ html{
 .tick-symbol{
     color: green;
 }
+.cross-symbol{
+    color: red;
+}
 .card-text{
     font-size: 12px;
     list-style: none;
