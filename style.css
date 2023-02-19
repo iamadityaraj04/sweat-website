@@ -64,6 +64,37 @@ html{
 #card-container img{
     border-radius:10px 10px 0px 0px ;
 }
+.package-price{
+    color: rgb(13, 145, 13);
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+.package-price-original{
+    color: rgb(255, 1, 86);
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+.strike{
+    color: black;
+    text-decoration: rgb(255, 1, 86) line-through;
+    text-decoration-thickness: 2px;
+}
+.per-month-tag{
+    font-size: 10px;
+}
+.card-heading{
+    margin: 2px;
+}
+.tick-symbol{
+    color: green;
+}
+.card-text{
+    font-size: 12px;
+    list-style: none;
+    padding: 0px;
+}
 @media screen and (max-width: 900px) {
     #card-container{
         flex-direction: column;
@@ -71,7 +102,7 @@ html{
         text-align: center;
         vertical-align: middle;
     }
-    #card-container div{
+    #card-container .card{
        margin:  20px;
     }
   }
