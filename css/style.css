@@ -1,0 +1,187 @@
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+#heading{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.info-nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 25px;
+    color: aliceblue;
+}
+#navbar-nav a{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.nav-link.active{
+    color: rgb(255, 0, 68);
+}
+#navbar-nav{
+    margin-left: 300px;
+    float: right;
+}
+.nav-link{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+#navbar-nav :hover{
+    color: rgb(255, 0, 68);
+}
+strike{
+    text-decoration: rgb(0, 0, 0) line-through;
+    text-decoration-thickness: 2px;
+}
+.card-title{
+    color: rgb(248, 249, 250);
+}
+.card-body{
+    background-color:rgb(255, 0, 68);
+}
+#trainer-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card-container{
+    border: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#card-container div {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px;
+    border: none;
+}
+#card-container div div{
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+}
+#card-container img{
+    border-radius:10px 10px 0px 0px ;
+}
+.card:hover{
+    transform:scale(1.03);
+    transition-duration: 0.1s;
+}
+.package-price{
+    color: rgb(248, 249, 250);
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.package-price-original{
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+.trainer-name{
+    color: black; 
+    margin: 0px;
+}
+.trainer-dsg{
+    color: rgb(255, 0, 68); font-size: 12px;
+}
+.strike{
+    color: black;
+    text-decoration: rgb(0, 0, 0) line-through;
+    text-decoration-thickness: 2px;
+}
+.per-month-tag{
+    font-size: 10px;
+}
+.card-heading{
+    margin: 2px;
+}
+.card-text{
+    color: rgb(248, 249, 250);
+}
+.tick-symbol{
+    color: green;
+}
+.cross-symbol{
+    color: rgb(255, 0, 68);
+}
+.card-text{
+    font-size: 12px;
+    list-style: none;
+    padding: 0px;
+}
+
+#trainer-content{
+    display: flex;
+    flex-direction: row;
+}
+#trainer-left, #trainer-right{
+    width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+
+    #card-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #card-container .card{
+       margin:  20px;
+    }
+    .video iframe{
+        height: 300px;
+    }
+    #trainer-content{
+        flex-direction: column;
+    }
+    #trainer-left, #trainer-right{
+        width:100%;
+    }
+  }
+.sub-container{
+    display: block;
+    top: 0px;
+    height: 700px;
+    background-size: 1300px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.quote{
+    width: 50px;
+    color: aliceblue;
+    font-size: 30px;
+}
+#quote-stress{
+    font-size: 100px;
+    color: rgb(255, 0, 68);
+}
+#quote-container{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 30px;
+    width: 600px;
+    padding: 50px;
+}
+#footer{
+    margin-top: 50px;
+    height: 300px;
+    background-color: rgb(255, 0, 68);
+}
+
