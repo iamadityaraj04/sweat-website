@@ -10,14 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="main-container">
         
         <!-- navbar -->
         <div id="heading">
@@ -64,16 +66,18 @@
 
 
         <!-- londing-page -->
-        <div class="sub-container" style="z-index: 0; background-image: url(image/home-img.jpg); margin: 20px 0px;">
-            <div id="quote-container">
-                <span class="quote">
-                    GOOD THINGS COME TO THOSE
-                </span>
-                <br>
-                <span class="quote">WHO</span>
-                <span id="quote-stress"> <strong>SWEAT</strong></span>
-                <br>
-                <button type="button" class="btn btn-outline-danger">Take a look</button>
+        <div class="video-container">
+            <video autoplay muted loop width="100%">
+              <source src="video/home1.mp4" type="video/mp4" / >
+            </video>
+            <div class="caption">
+              <span id="quote">
+                  GOOD THINGS COME TO THOSE WHO
+              </span>
+              <br>
+              <span id="quote-stress"> <strong>SWEAT</strong></span>
+              <br>
+              <button type="button" class="btn btn-outline-danger">Take a look</button>
             </div>
         </div>
 
@@ -81,7 +85,7 @@
 
 
         <!-- About -->
-        <div id="trainer" style="padding: 20px; scroll-margin-top: 40px;">
+        <div id="trainer" style="padding: 20px; scroll-margin-top: 40px; background-color: rgb(248, 249, 250);">
             <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
                 <b>TRAINERS</b><br>
                 
@@ -204,7 +208,7 @@
         <!-- About -->
 
         <!-- package -->
-        <div id="package" style="margin: 0px 50px; padding: 20px; scroll-margin-top: 40px;">
+        <div id="package" style="padding: 20px; scroll-margin-top: 40px; background-color: rgb(248, 249, 250);">
             
         <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
             <b>PACKAGES</b><br>
@@ -280,10 +284,139 @@
         </div>
         <!-- package -->
 
+        <!-- testimonials -->
+
+        <div id="testimonials" style="padding: 20px; scroll-margin-top: 40px; background-color: rgb(248, 249, 250);">
+            
+            <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
+                <b>TESTIMONIALS</b><br>
+                
+                <center>
+                    <hr width="40px" style="margin: 0px; padding: 0px;">
+                    <i style="color: black; font-size: 14px; text-align: center;">thoughts of our experienced customers</i>
+                </center>
+            </p>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample" >
+                <div class="accordion-item" style="background-color: rgb(255, 0, 68);">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color:rgb(248, 249, 250); ">
+                      <div class="accordion-info">
+                          <img src="image/trainer-1.jpg" alt="error" width="50px" style="border-radius: 100%;">
+                          <span id="reviewer-name">ADITYA RAJ</span>
+                            <div class="star-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                            </div>                      
+                        </div>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <p style="color: rgb(248, 249, 250);font-size: 14px; text-align: justify; font-family: 'Shantell Sans', cursive;">
+                            <center>
+                                <span class="quote">“</span>
+                                No bad things to say about Sweat, they are top notch at every corner and truly take care of their customers.
+                                 <span class="quote">”</span> 
+                            </center>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item"  style="background-color: rgb(255, 0, 68);">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <div class="accordion-info">
+                            <img src="image/trainer-3.jpg" alt="error" width="50px" style="border-radius: 100%;">
+                            <span id="reviewer-name">Marine Eva</span>
+                              <div class="star-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16" style="color: gold;">
+                                    <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                  </svg>
+                              </div>                      
+                          </div>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p style="color: rgb(248, 249, 250);font-size: 14px; text-align: justify; font-family: 'Shantell Sans', cursive;">
+                            <center>
+                                <span class="quote">“</span>
+                                The facilities at Sweat stood out to me the most. They are well maintained and have high quality equipment.
+                                 <span class="quote">”</span> 
+                            </center>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item"  style="background-color: rgb(255, 0, 68);">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <div class="accordion-info">
+                            <img src="image/trainer-4.jpg" alt="error" width="50px" style="border-radius: 100%;">
+                            <span id="reviewer-name">Sarkis Leo</span>
+                              <div class="star-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: gold;">
+                                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                              </div>                      
+                          </div>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p style="color: rgb(248, 249, 250);font-size: 14px; text-align: justify; font-family: 'Shantell Sans', cursive;">
+                            <center>
+                                <span class="quote">“</span>
+                                The atmosphere at Sweat is amazing, the people are even better. All in all, it is a great place to work out.
+                                 <span class="quote">”</span> 
+                            </center>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+
+        <!-- testimonials -->
+        
         <!-- video -->
-        <div class="video" style="margin-top: 50px;" >
+        <div class="video" style="background-color: rgb(248, 249, 250);">
             <div id="content-heading">
-                <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
+                <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68);"> 
                     <b>OUR <span style="color: rgb(0, 0, 0);">LATEST VIDEO</span></b><br>
                     
                     <center>
@@ -299,7 +432,7 @@
 
 
         <!-- Footer -->
-        <footer class="text-center text-lg-start bg-white text-muted" style="margin-top: 50px;" id="footer">
+        <footer class="text-center text-lg-start bg-white text-muted" style="background-color: rgb(248, 249, 250);">
             <!-- Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
@@ -347,40 +480,39 @@
                     Useful links
                     </h6>
                     <p>
-                    <a href="index.html#card-container" class="text-reset">Pricing</a>
+                    <a href="#package" class="text-reset">Pricing</a>
                     </p>
                     <p>
-                    <a href="#!" class="text-reset">Trainers</a>
+                    <a href="#trainer" class="text-reset">Trainers</a>
                     </p>
                     <p>
-                    <a href="#!" class="text-reset">Help</a>
+                    <a href="#footer" class="text-reset">Help</a>
                     </p>
                 </div>
                 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3 text-secondary"><img src="image/location-outline.svg" alt="error" width="20px"></i> Dhanbad, Jharkhand, India</p>
+                    <p><i class="fas home me-3 text-secondary"><img src="image/location-outline.svg" alt="error" width="20px"></i> Dhanbad, Jharkhand, India</p>
                     <p>
-                    <i class="fas fa-envelope me-3 text-secondary"><img src="image/mail-outline.svg" alt="error" width="20px"></i>
+                    <i class="fas envelope me-3 text-secondary"><img src="image/mail-outline.svg" alt="error" width="20px"></i>
                     sweatofficial@gmail.com
                     </p>
-                    <p><i class="fas fa-phone me-3 text-secondary"><img src="image/call-outline.svg" alt="error" width="20px"></i> + 01 234 567 88</p>
+                    <p><i class="fas phone me-3 text-secondary"><img src="image/call-outline.svg" alt="error" width="20px"></i> + 01 234 567 88</p>
                 </div>
+                <!-- Copyright -->
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                © 2023 Copyright, All rights are reserved.
+                <a class="text-reset fw-bold" href="index.html">SWEAT</a>
+                </div>
+                <!-- Copyright -->
                 </div>
             </div>
             </section>
             <!-- Section: Links  -->
         
-            <!-- Copyright -->
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-            © 2023 Copyright, All rights are reserved.
-            <a class="text-reset fw-bold" href="index.html">SWEAT</a>
-            </div>
-            <!-- Copyright -->
         </footer>
         <!-- Footer -->
     </div>
-    
 </body>
 </html>
