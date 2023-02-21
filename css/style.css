@@ -27,7 +27,7 @@ html{
     border-top: 10px solid rgb(255, 0, 68);
     width: 100px;
     height: 100px;
-    animation: spinner 4s linear infinite;
+    animation: spinner 0.8s linear infinite;
   }  
   @keyframes spinner {
     0% { transform: rotate(0deg); }
