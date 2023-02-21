@@ -14,11 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/javascript.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
+    <div id="loading-animation">
+        <div class="loader"></div>
+    </div>
     <div class="main-container">
         
         <!-- navbar -->
@@ -41,7 +44,7 @@
                                 <a class="nav-link" href="#">HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT US</a>
+                                <a class="nav-link" href="about.html">ABOUT US</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#trainer">TRAINERS</a>
@@ -75,7 +78,7 @@
                   GOOD THINGS COME TO THOSE WHO
               </span>
               <br>
-              <span id="quote-stress"> <strong>SWEAT</strong></span>
+              <span id="quote-stress"> <strong class="typing"></strong></span>
               <br>
               <button type="button" class="btn btn-outline-danger">Take a look</button>
             </div>
@@ -83,11 +86,10 @@
 
         <!-- londing-page -->
 
-
-        <!-- About -->
-        <div id="trainer" style="padding: 20px; scroll-margin-top: 40px; background-color: rgb(248, 249, 250);">
+        <!-- trainer -->
+        <div id="trainer" class="sections">
             <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
-                <b>TRAINERS</b><br>
+                <b class="section-heading">TRAINERS</b><br>
                 
                 <center>
                     <hr width="40px" style="margin: 0px; padding: 0px;">
@@ -193,9 +195,11 @@
                 <!-- trainer-right -->
                 <div id="trainer-right">
                     
-                    <p style="padding: 5%; color: rgb(248, 249, 250); font-size: 20px; text-align: justify; font-family: 'Shantell Sans', cursive;">
+                    <p id="trainer-right-content">
                         <span class="quote">“</span>
-                         You can’t put a limit on how much you can improve and how much you can do. There are no limits on what you can be, do, or have in life. 
+                        Trainers are responsible for training individuals and developing a healthy workout regimen for all their clients. 
+                        They often work with different muscle groups and combine this knowledge with cardiovascular training to provide their 
+                        clients with the best exercise program possible.  They may demonstrate various exercises and improve their client's technique.
                          <span class="quote">”</span> 
                     </p>
                    
@@ -205,13 +209,13 @@
         </div>
         
 
-        <!-- About -->
+        <!-- trainer -->
 
         <!-- package -->
-        <div id="package" style="padding: 20px; scroll-margin-top: 40px; background-color: rgb(248, 249, 250);">
+        <div id="package" class="sections">
             
         <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
-            <b>PACKAGES</b><br>
+            <b class="section-heading">MEMBERSHIP PLANS</b><br>
             
             <center>
                 <hr width="40px" style="margin: 0px; padding: 0px;">
@@ -286,10 +290,10 @@
 
         <!-- testimonials -->
 
-        <div id="testimonials" style="padding: 20px; scroll-margin-top: 40px; background-color: rgb(248, 249, 250);">
+        <div id="testimonials" class="sections">
             
             <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
-                <b>TESTIMONIALS</b><br>
+                <b class="section-heading">TESTIMONIALS</b><br>
                 
                 <center>
                     <hr width="40px" style="margin: 0px; padding: 0px;">
@@ -417,7 +421,7 @@
         <div class="video" style="background-color: rgb(248, 249, 250);">
             <div id="content-heading">
                 <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68);"> 
-                    <b>OUR <span style="color: rgb(0, 0, 0);">LATEST VIDEO</span></b><br>
+                    <b class="section-heading">OUR <span style="color: rgb(0, 0, 0);">LATEST VIDEO</span></b><br>
                     
                     <center>
                         <hr width="40px" style="margin: 0px; padding: 0px;">
@@ -432,7 +436,7 @@
 
 
         <!-- Footer -->
-        <footer class="text-center text-lg-start bg-white text-muted" style="background-color: rgb(248, 249, 250);">
+        <footer class="text-center text-lg-start bg-white text-muted" style="background-color: rgb(248, 249, 250); " id="footer">
             <!-- Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
@@ -470,8 +474,7 @@
                     <i class="fas fa-gem me-3 text-secondary"> <img src="image/logo.png" alt="error" width="50px"></i>
                     </h6>
                     <p>
-                    Here you can use rows and columns to organize your footer content. Lorem ipsum
-                    dolor sit amet, consectetur adipisicing elit.
+                        No matter how slow you go you’re still lapping everyone on the couch.
                     </p>
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -514,5 +517,20 @@
         </footer>
         <!-- Footer -->
     </div>
+
+
+    <script>
+        var typing = new Typed (".typing" ,{
+            strings : ["RUN","WORK","SWEAT"],
+            typeSpeed:200,
+            backSpeed:200,
+            loop:true
+        }); 
+
+        setTimeout(() => {
+            document.getElementById("loading-animation").style.display="none";
+        }, 5000);
+        seet
+    </script>
 </body>
 </html>
