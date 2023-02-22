@@ -19,9 +19,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
-
+    <div id="loading-animation">
+        <div class="loader"></div>
+    </div>
     <div class="main-container">
-        
         <!-- navbar -->
         <div id="heading">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,10 +40,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav" id="navbar-nav">
-                                <a class="nav-link" href="index.html#">HOME</a>
+                                <a class="nav-link" href="index.html">HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT US</a>
+                                <a class="nav-link" href="#" style="color: rgb(255, 0, 68);">ABOUT US</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html#trainer">TRAINERS</a>
@@ -51,13 +52,13 @@
                                 <a class="nav-link" href="index.html#package">PACKAGES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">LET'S DO IT</a>
+                                <a class="nav-link" href="letsDoIt.html">LET'S DO IT</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#footer">CONTACTS</a>
                             </li>
                             <li class="nav-item">
-                                <button type="button" class="btn btn-danger" style="color: aliceblue; width: 100px;">Join Now</button>
+                                <button type="button" class="btn btn-danger" style="color: rgb(248, 249, 250) width: 100px;">Join Now</button>
                             </li>
                         </ul>
                     </div>
@@ -68,7 +69,10 @@
 
         <!-- about -->
 
-        <div id="about" class="sections">
+        <div id="about" class="sections" style="background-color: white;">
+            
+            <div class="about-info">
+            </div>
             <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
                 <b class="section-heading">ABOUT <span style="color: black;">US</span></b><br>
                 
@@ -77,10 +81,103 @@
                     <i style="color: black; font-size: 14px; text-align: center;">read to know, what we are?</i>
                 </center>
             </p>
-            <div class="about-info">
+            <div class="about-container">
+                <div class="about-container-left"m style="box-shadow: -2px 0px 5px 0px  rgb(255, 0, 68); background-color: rgb(248, 249, 250);">
+                    <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68);padding: 0%; "> 
+                        <b class="section-heading">OUR <span style="color: black;">STORY</span></b><br>
+                    </p>
+                </div>
+                <div class="about-container-right" style="background-color: rgb(255, 0, 68); text-align: justify;">
+                    <p> <b> Sweat was founded in 2023 as a family owned and operated business specialising in supplying 
+                        high-quality gym equipment at great prices.</b>
+                    </p>
+                    <p>
+                        Instead of being just another gym, our founders wanted to be the best in the industry and set their 
+                        minds to doing so and helping thousands of customers live longer, happier and healthier lives.
+                    </p>
+                    <div id="list-container">
+                        <ul>
+                            <li>Builds Aerobic Power</li>
+                            <li>Boots your Memory</li>
+                        </ul>
+                        <ul>
+                            <li>Strong body structure</li>
+                            <li>Bring about resultful Sleep</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="our-values">
+                <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
+                    <b class="section-heading" style="color: black;">OUR <span style="color: rgb(255, 0, 68);">VALUES</span></b><br>
+                    
+                    <center>
+                        <hr width="40px" style="margin: 0px; padding: 0px;">
+                        <i style="color: black; font-size: 14px; text-align: center;">For helping customers reach their fitness goals has been 
+                            at the heart of what we do and why we do it! </i>
+                    </center>
+                </p>
 
+                <div id="our-values-container">
+                    <div class="our-values-subcontainer">
+                        <div class="our-values-content">
+                            <div class="our-values-content-icon">
+                                <img src="image/customer-support.png" alt="error">
+                            </div>
+                            <div class="our-values-content-data">
+                                <p class="our-values-content-heading">
+                                    Customer Service
+                                </p>
+                                <p class="our-values-content-value">
+                                    Customers are why we exist and we’re passionate about delivering exceptional, personalised customer service to all.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-values-content">
+                            <div class="our-values-content-icon">
+                                <img src="image/communication.png" alt="error">
+                            </div>
+                            <div class="our-values-content-data">
+                                <p class="our-values-content-heading">
+                                    Communication
+                                </p>
+                                <p class="our-values-content-value">
+                                    We believe open, direct and supportive communication is the foundation of any successful organisation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="our-values-content">
+                            <div class="our-values-content-icon">
+                                <img src="image/teamwork.png" alt="error">
+                            </div>
+                            <div class="our-values-content-data">
+                                <p class="our-values-content-heading">
+                                    Teamwork
+                                </p>
+                                <p class="our-values-content-value">
+                                    We’re committed to common goals, with effective communication and accountability making our team achieve greater results.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <div class="about-container">
+                <div class="about-container-left" style="background-color: rgb(255, 0, 68); color: rgb(248, 249, 250); padding: 20px; text-align: justify;">
+                    <p>
+                        In order to improve the overall health of the Indian community, we are committed to providing a welcoming environment. 
+                        We aim to educate our clients that overall health is more than just fitness - community, variety, refueling, recovering, 
+                        and challenging your mind and body. Under one roof, we provide seasoned professionals with various programs and disciplines
+                         and conscious living principles that empower our clients to live better lives.
+                    </p>
+                </div>
+                <div class="about-container-right" style="box-shadow: -2px 0px 5px 0px  rgb(255, 0, 68); background-color: ;">
+                    <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68);padding: 0%; "> 
+                        <b class="section-heading">OUR <span style="color: black;">MISSION</span></b><br>
+                    </p>
+                </div>
+            </div>
         </div>
         <!-- about -->
 
@@ -166,7 +263,12 @@
         </footer>
         <!-- Footer -->
     </div>
-
+    <script>
+        setTimeout(() => {
+            document.getElementById("loading-animation").style.display="none";
+        }, 2000);
+        seet
+    </script>
     
 </body>
 </html>
