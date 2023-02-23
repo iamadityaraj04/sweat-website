@@ -19,17 +19,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
-    <div id="loading-animation">
-        <div class="loader"></div>
-    </div>
+    <!-- <div id="loading-animation">
+        <button class="btn btn-primary" type="button" disabled style="background-color: transparent; color: rgb(255, 0, 68); border: none;">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+        </button>
+    </div> -->
     <div class="main-container">
+        
         <!-- navbar -->
         <div id="heading">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <nav class="navbar navbar-light bg-light">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="#">
+                          <a class="navbar-brand" href="index.html">
                             SWEAT
                             <img src="image/logo.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
                           </a>
@@ -528,9 +532,9 @@
             loop:true
         }); 
 
-        setTimeout(() => {
-            document.getElementById("loading-animation").style.display="none";
-        }, 3000);
+        // setTimeout(() => {
+        //     document.getElementById("loading-animation").style.display="none";
+        // }, 3000);
     </script>
 </body>
 </html>

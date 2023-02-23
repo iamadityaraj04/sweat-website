@@ -20,20 +20,6 @@ html{
     overflow: hidden;
     position: relative;
 }
-.loader {
-    margin: auto; 
-    border: 5px solid rgb(248, 249, 250);
-    box-shadow: 0px 0px 5px 2px;
-    border-radius: 50%;
-    border-top: 5px solid rgb(255, 0, 68);
-    width: 50px;
-    height: 50px;
-    animation: spinner 0.5s linear infinite;
-  }  
-  @keyframes spinner {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
 .video-container video {
     z-index: -1;
     filter: blur(3px);
@@ -49,7 +35,7 @@ html{
 
 #loading-animation{
     z-index: 10;
-    background-color: rgba(250, 250, 250, 0.838);
+    background-color: rgba(255, 255, 255, 0.945);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +227,16 @@ strike{
 #accordionPanelsStayOpenExample{
     padding: 0px 80px;
 }
+#heading {
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+}
 
+@keyframes example {
+  from {top: 100px;}
+  to {top: 0px;}
+}
 
 
 
