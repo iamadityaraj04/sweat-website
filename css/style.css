@@ -432,5 +432,11 @@ strike{
         align-items: center;
         margin: 10px;
     }
+    .about-container-left p {
+        margin: 0px 0px 0px 0px;
+    }
+    .about-container-right {
+        padding: 0px;
+    }
     /* -----------about us -------------*/
 }
