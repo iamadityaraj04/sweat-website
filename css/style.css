@@ -22,11 +22,12 @@ html{
 }
 .loader {
     margin: auto; 
-    border: 10px solid rgb(248, 249, 250);
+    border: 5px solid rgb(248, 249, 250);
+    box-shadow: 0px 0px 5px 2px;
     border-radius: 50%;
-    border-top: 10px solid rgb(255, 0, 68);
-    width: 100px;
-    height: 100px;
+    border-top: 5px solid rgb(255, 0, 68);
+    width: 50px;
+    height: 50px;
     animation: spinner 0.5s linear infinite;
   }  
   @keyframes spinner {
@@ -334,6 +335,49 @@ strike{
 .our-values-content-icon img{
     width: 100px;
 }
+
+/* form */
+#form{
+    width: 60%;
+    margin: 10px auto;
+    box-shadow: 0px 0px 3px -1px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(248, 249, 250);
+}
+label{
+    margin: 3px 0px;
+}
+input,select{
+    width: 300px;
+    height: 50px;
+    padding: 0px 20px;
+    border: none;
+    box-shadow: 0px 0px 2px -1px rgb(255, 0, 68) ;
+    border-radius: 5px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+input[type=radio]{
+    width: 50px;
+    border-radius: 0px;
+}
+#form label{
+    color: rgb(255, 0, 68);
+}
+input[type=radio].radio-color {
+            accent-color: rgb(255, 0, 68) ;
+}
+
+/* form */
 /* ------------about us------------- */
 @media screen and (max-width: 900px) {
     #navbar-nav {
@@ -400,7 +444,9 @@ strike{
     .section-heading{
         font-size: 20px;
     }
+    
 
+    
     /* ----------about us-------- */
     .about-info  {
         height: 100px;
@@ -434,9 +480,29 @@ strike{
     }
     .about-container-left p {
         margin: 0px 0px 0px 0px;
+        font-size: 14px;
     }
     .about-container-right {
-        padding: 0px;
+        padding: 0px 30px;
+    }
+    .about-container-right p{
+        font-size: 12px;
+        
+    }
+    #list-container li{
+        font-size: 14px;
     }
     /* -----------about us -------------*/
+    
+    #form{
+        width: 90%;
+    }
+    input,select{
+        width: 200px;
+        height: 30px;
+        padding: 0px 20px;
+        border: none;
+        box-shadow: 0px 0px 2px -1px rgb(255, 0, 68) ;
+        border-radius: 5px;
+    }
 }

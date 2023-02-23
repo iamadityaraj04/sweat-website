@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>Registration | Sweat</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div id="loading-animation">
+        <div class="loader"></div>
+    </div>
+    <a href="index.html">
+        <button type="button" class="close" aria-label="Close" style="border: none; font-size: 40px; cursor: pointer; color: rgb(248, 249, 250); position: absolute; z-index: 2; background-color: transparent;" >
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </a>
+    
+    <div class="about-info" style="opacity: 0.5; height: 100px;" >
+    </div>
+    <p style="text-align: center; font-size: 2rem; color: rgb(255, 0, 68); margin: 20px 0px 0px 0px; padding: 0%; "> 
+        <b class="section-heading">REGISTRATION <span style="color: black;">FORM</span></b><br>
+        
+        <center>
+            <hr width="40px" style="margin: 0px; padding: 0px;">
+            <i style="color: black; font-size: 14px; text-align: center;">enroll yourself to become a member of SWEAT</i>
+        </center>
+    </p>
+    <div id="form">
+        <form action="" id="reg-form">
+            <div id="name" class="row">
+                <div class="col">
+                    <input type="text" placeholder="Aditya">
+                    <label for="fname">Firstname </label>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Raj">
+                    <label for="lname">Lastname </label>
+                </div>
+            </div>
+            <div id="email" class="row">
+                <div class="col">
+                    <input type="email" placeholder="abc@gmail.com">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col">
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <label for="gender">Gender</label>
+                </div>
+            </div>
+            <div id="plan" class="row">
+                <div>
+                    <label for="plan">Plan</label>
+                    <select name="plan">
+                        <option value="basic">Basic (&#x20B9 999/-)</option>
+                        <option value="gold">Gold (&#x20B9 1999/-)</option>
+                        <option value="premium">Preminum (&#x20B9 4999/-)</option>
+                        <option value="Platinum">Platinum (&#x20B9 9999/-)</option>
+                    </select>
+                </div>
+            </div>
+            <Label style="padding: 10px 0px;">Payment Method</Label>
+            <div style="display: flex; flex-direction: row; align-items: center; margin: 0px 30px;">
+                <input type="radio" name="cash"  style="width: 20px; height: 20px; margin: 0px 10px;" class="radio-color"> <label for="payment">Cash</label>
+                <input type="radio" name="upi"  style="width: 20px; height: 20px; margin: 0px 10px;" class="radio-color"> <label for="payment">UPI</label>
+                <input type="radio" name="card"  style="width: 20px; height: 20px; margin: 0px 10px;" class="radio-color"> <label for="payment">Card</label>
+            </div>
+            <center><input type="submit" value="SUBMIT" onclick="success()" style="background-color: rgb(255, 0, 68); color: rgb(248, 249, 250); margin: 15px;"></center>
+            </div>
+        </form> 
+    </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted" style="background-color: rgb(248, 249, 250); " id="footer">
+        <!-- Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Stay connected with us:</span>
+        </div>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 link-secondary" style="text-decoration: none;">
+                <img src="image/logo-facebook.svg" alt="error" width="30px">
+            </a>
+            <a href="" class="me-4 link-secondary" style="text-decoration: none;">
+                <img src="image/logo-twitter.svg" alt="error" width="30px">
+            </a>
+            <a href="" class="me-4 link-secondary" style="text-decoration: none;">
+                <img src="image/logo-instagram.svg" alt="error" width="30px">
+            </a>
+            <a href="" class="me-4 link-secondary" style="text-decoration: none;">
+                <img src="image/logo-youtube.svg" alt="error" width="30px">
+            </a>
+        </div>
+        <!-- Right -->
+        </section>
+        <!-- Social media -->
+    
+        <!-- Section: Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    <div style="display: flex;flex-direction: row; align-items: center;">
+                        <span style="font-size: 40px;">SWEAT</span><i class="fas fa-gem me-3 text-secondary"> <img src="image/logo.png" alt="error" width="50px"></i>
+                    </div>
+                </h6>
+                <p>
+                    No matter how slow you go you’re still lapping everyone on the couch.
+                </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+                </h6>
+                <p>
+                <a href="#package" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                <a href="#trainer" class="text-reset">Trainers</a>
+                </p>
+                <p>
+                <a href="#footer" class="text-reset">Help</a>
+                </p>
+            </div>
+            
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas home me-3 text-secondary"><img src="image/location-outline.svg" alt="error" width="20px"></i> Dhanbad, Jharkhand, India</p>
+                <p>
+                <i class="fas envelope me-3 text-secondary"><img src="image/mail-outline.svg" alt="error" width="20px"></i>
+                sweatofficial@gmail.com
+                </p>
+                <p><i class="fas phone me-3 text-secondary"><img src="image/call-outline.svg" alt="error" width="20px"></i> + 01 234 567 88</p>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2023 Copyright, All rights are reserved.
+            <a class="text-reset fw-bold" href="index.html">SWEAT</a>
+            </div>
+            <!-- Copyright -->
+            </div>
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+    </footer>
+    <!-- Footer -->
+    <script>
+        function success() {
+            alert("Congratulation! You are now member of Sweat.");
+        }
+        setTimeout(() => {
+            document.getElementById("loading-animation").style.display="none";
+        }, 3000);
+    </script>
+</body>
+</html>
