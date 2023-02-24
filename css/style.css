@@ -242,7 +242,7 @@ strike{
 
 
 /* ------------about us------------- */
-.about-info  {
+.about-info,.blog-cover  {
     background-image: url(/image/about-cover.jpg);
     height: 200px;
     display: flex;
@@ -252,7 +252,7 @@ strike{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.about-info{
+.about-info, .blog-cover{
     opacity: 0.8;
 }
 .about-container{
@@ -330,6 +330,96 @@ strike{
 .our-values-content-icon img{
     width: 100px;
 }
+/* blog */
+
+#blog-cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-image: url(/image/blog-cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px) brightness(70%);
+}
+#blog-cover-title{
+    position: relative;
+}
+.blog-container{
+    display: flex; flex-direction: row;
+    background-color: rgb(255, 0, 68);
+}
+.blog-left{
+    width: 100%; 
+    height: 500px; 
+    border: none; 
+    margin-bottom:20px;
+    box-shadow: 0px 0px 5px -1px;
+}
+.blog-left-container{
+    width: 60%;
+    margin:30px 0px 20px 30px;
+    border: none;
+}
+.blog-right-container{
+    width: 40%;
+}
+.blog-right{
+    height: 400px;
+    background-color: rgb(248, 249, 250); 
+    margin: 30px 30px 0px 10px; 
+    border: none; 
+    box-shadow: 0px 0px 5px -1px;
+}
+.blog-left-up,.blog-left-down,.blog-right-up,.blog-right-down{
+    height: 50%;
+}
+.blog-left-up,.blog-right-up{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tags span{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 3px;
+}
+.readmore-btn button{
+    background-color:white ; 
+    border: 1px solid rgb(255, 0, 68); 
+    color: rgb(255, 0, 68);
+    padding: 5px 20px;
+}
+.readmore-btn button:hover{
+    transform: scale(1.1);
+    background-color:rgb(255, 0, 68);
+    color: rgb(248, 249, 250);
+    border: none;
+    transition-duration: 0.5s;
+}
+.blog-left-down,.blog-right-down{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(248, 249, 250);
+}
+
+.blog-heading p{
+    font-weight: 300;  
+    font-size: 25px;
+}
+.blog-description p{
+    font-size: 15px; 
+    color: rgb(182, 182, 182);
+}
+.blog-description span{
+    color: rgb(255, 0, 68);
+}
+.readmore-btn{
+    text-align: end;
+}
+/* blog */
 
 /* form */
 #form{
@@ -500,4 +590,12 @@ input[type=radio].radio-color {
         box-shadow: 0px 0px 2px -1px rgb(255, 0, 68) ;
         border-radius: 5px;
     }
+
+    /* blog */
+    .blog-container{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    /* blog */
 }
